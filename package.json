@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A Node.js application for user-account creation.",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,12 +14,21 @@
   "keywords": [
     "Leismore",
     "User",
-    "Creation"
+    "Creation",
+    "LMOS"
   ],
-  "author": "Kyle Chine",
+  "author": {
+    "name": "Kyle Chine",
+    "email": "kyle.chine@leismore.co",
+    "url": "https://kyle-chine.leismore.co"
+  },
   "license": "AGPL-3.0-only",
   "bugs": {
     "url": "https://github.com/leismore/create_user/issues"
   },
-  "homepage": "https://github.com/leismore/create_user#readme"
+  "homepage": "https://github.com/leismore/create_user#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "typescript": "^4.5.2"
+  }
 }
