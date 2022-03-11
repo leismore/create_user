@@ -1,0 +1,48 @@
+{
+  "app":
+  {
+    "projectName":  "create_user",
+    "appID":        "d837d735-56a9-4265-84ff-28a7e5d708ca",
+    "host":         "localhost",
+    "port":         "8082",
+    "backlog":       511,
+    "domain":       "localhost",
+    "publicPort":   "8082",
+    "ssl":          false
+  },
+
+  "auth_app_self":
+  {
+    "appID":   "29f4a510-9c34-40ad-a194-4ff0f5ace9f3",
+    "api":
+    {
+      "author": {
+        "url": "http://localhost:8080/api/authorizer"
+      }
+    }
+  },
+
+  "id_generator":
+  {
+    "appID":   "151551fb-6172-49ba-aa8c-c826b3082729",
+    "api":
+    {
+      "uuid-rand": {
+        "url": "http://localhost:8081/api/uuid-rand"
+      },
+      "short-id": {
+        "url": "http://localhost:8081/api/short-id"
+      },
+      "token":
+      {
+        "url": "http://localhost:8081/api/token"
+      }
+    }
+  },
+
+  "couchdb":
+  {
+    "designName":   "create_user",
+    "dbPrefix":     "lmos"
+  }
+}

@@ -46,6 +46,7 @@
     "@leismore/error_handler_last": "^2.0.3",
     "@leismore/get_handler": "^2.0.3",
     "@leismore/lmerror": "^6.0.3",
+    "@leismore/password": "^1.0.0",
     "@leismore/response": "^5.0.2",
     "@leismore/token": "^6.0.2",
     "axios": "^0.26.0",
