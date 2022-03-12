@@ -7,6 +7,8 @@
  * 2              CouchDB: connection failure
  * 3              invalid credential
  * 4              HTTP 405: Method Not Allowed
+ * 5              authorization failure
+ * 6              auth_app_self failure
  */
 
 import { LMError } from '@leismore/lmerror';
