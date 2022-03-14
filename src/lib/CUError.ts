@@ -9,6 +9,8 @@
  * 4              HTTP 405: Method Not Allowed
  * 5              authorization failure
  * 6              auth_app_self failure
+ * 7              invalid input: email
+ * 8              invalid input: password
  */
 
 import { LMError } from '@leismore/lmerror';

@@ -52,7 +52,11 @@
     "createUser": {
       "url":          "create-user",
       "methods":      ["OPTIONS", "HEAD","GET", "POST"],
-      "timeout":      10000
+      "timeout":      10000,
+      "password": {
+        "lengthMin":  6,
+        "lengthMax":  255
+      }
     }
   }
 }
