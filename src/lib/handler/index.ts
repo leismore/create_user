@@ -4,7 +4,8 @@
  * @res.locals
  * {
  *   input:     { Input }
- *   userID:    { UUID  }
+ *   db:        { nano.ServerScope }
+ *   userID:    { UUID }
  * }
  */
 

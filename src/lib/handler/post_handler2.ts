@@ -6,7 +6,6 @@ import * as EmailValidator  from 'email-validator';
 import { CUError }          from '../CUError';
 import { Request, Response, NextFunction } from 'express';
 import { Input }            from '../type/Input';
-import { Password }         from '@leismore/password';
 import * as config          from '../../config.json';
 
 const PW_LENGTH_MIN:number = config.api.createUser.password.lengthMin;

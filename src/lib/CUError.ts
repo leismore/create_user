@@ -11,6 +11,8 @@
  * 6              auth_app_self failure
  * 7              invalid input: email
  * 8              invalid input: password
+ * 9              CouchDB (View): get_userID_email failure
+ * 10             CouchDB (View): is_dup_userID failure
  */
 
 import { LMError } from '@leismore/lmerror';
