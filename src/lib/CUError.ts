@@ -16,6 +16,12 @@
  * 11             CouchDB (Use database): user failure
  * 12             CouchDB (Use database): user_authentication failure
  * 13             user account existing
+ * 14             id_generator (token): failure
+ * 15             id_generator (uuid-rand): failure
+ * 16             id_generator (short-id): failure
+ * 17             password creation failure
+ * 18             CouchDB (Insert): user failure
+ * 19             CouchDB (Insert): user_authentication failure
  */
 
 import { LMError } from '@leismore/lmerror';

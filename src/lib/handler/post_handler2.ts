@@ -13,7 +13,7 @@ const PW_LENGTH_MAX:number = config.api.createUser.password.lengthMax;
 
 function post_handler2(req:Request, res:Response, next:NextFunction):void
 {
-    const input:Input = req.body;
+    let input:Input = req.body;
 
     // Test media type
     if ( req.is('application/json') === false )
@@ -38,6 +38,10 @@ function post_handler2(req:Request, res:Response, next:NextFunction):void
         };
         next( new CUError(error, response) );
         return;
+    }
+    else
+    {
+        input.email = input.email.toLowerCase();
     }
 
     if ( ( 'password' in input   === false         ) ||

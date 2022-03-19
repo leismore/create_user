@@ -7,13 +7,13 @@ type UserAuthentication = {
     password: {
         chars:     string,
         generated: number,
-        expiry:    number
+        expiry:    number | null
     },
 
     token: {
         chars:     string,
         generated: number,
-        expiry:    number
+        expiry:    number | null
     }
 };
 

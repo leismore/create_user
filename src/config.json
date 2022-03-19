@@ -28,14 +28,17 @@
     "api":
     {
       "uuid-rand": {
-        "url": "http://localhost:8081/api/uuid-rand"
+        "url": "http://localhost:8081/api/uuid-rand",
+        "timeout": 10000
       },
       "short-id": {
-        "url": "http://localhost:8081/api/short-id"
+        "url": "http://localhost:8081/api/short-id",
+        "timeout": 10000
       },
       "token":
       {
-        "url": "http://localhost:8081/api/token"
+        "url": "http://localhost:8081/api/token",
+        "timeout": 10000
       }
     }
   },
@@ -55,7 +58,14 @@
       "timeout":      10000,
       "password": {
         "lengthMin":  6,
-        "lengthMax":  255
+        "lengthMax":  255,
+        "expiry":     null
+      },
+      "token": {
+        "expiry":     7
+      },
+      "email": {
+        "expiry":     1
       }
     }
   }
