@@ -13,6 +13,9 @@
  * 8              invalid input: password
  * 9              CouchDB (View): get_userID_email failure
  * 10             CouchDB (View): is_dup_userID failure
+ * 11             CouchDB (Use database): user failure
+ * 12             CouchDB (Use database): user_authentication failure
+ * 13             user account existing
  */
 
 import { LMError } from '@leismore/lmerror';
