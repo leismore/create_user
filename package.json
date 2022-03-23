@@ -5,7 +5,10 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-server": "ts-node ./src/index.ts",
+    "test": "start-server-and-test start-server http://localhost:8082/api/create-user 'mocha ./test/test.ts'",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
