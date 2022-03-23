@@ -6,10 +6,10 @@
 import * as express                from 'express';
 import { get_handler }             from '@leismore/get_handler';
 import { error_handler_last }      from '@leismore/error_handler_last';
-import * as config                 from 'config.json';
+import * as config                 from './config.json';
 import { all_handler1, cors_handler,
     post_handler1, post_handler2, post_handler3,
-    post_handler4, post_handler5 } from 'lib/handler/index';
+    post_handler4, post_handler5 } from './lib/handler/index';
 
 // Init
 let app = express();

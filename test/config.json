@@ -1,0 +1,13 @@
+{
+    "client":
+    {
+        "appID" : "de0a791c-ba08-4a39-a4f2-c2276032c451",
+        "token" : "7YpMunAjQ26omSqXxpwVwF"
+    },
+
+    "user":
+    {
+        "email":    "tester@leismore.co",
+        "password": "TESTER_PASSWORD"
+    }
+}

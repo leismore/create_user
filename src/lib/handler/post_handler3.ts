@@ -2,7 +2,7 @@
  * POST Handler 3 - Connecting to the CouchDB
  */
 
-import { connect_db }                      from "lib/connect_db";
+import { connect_db }                      from "../connect_db";
 import { Request, Response, NextFunction } from 'express';
 import { unknown2error }                   from '@leismore/unknown2error';
 

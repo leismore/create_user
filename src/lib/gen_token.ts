@@ -2,12 +2,12 @@
  * Get new token from id_generator
  */
 
-import { CUError }                              from 'lib/CUError';
+import { CUError }                              from './CUError';
 import { unknown2error }                        from '@leismore/unknown2error';
 import { Token }                                from '@leismore/token';
 import { default as axios, AxiosRequestConfig } from 'axios';
-import * as credential                          from 'credential/self.json';
-import * as config                              from 'config.json';
+import * as credential                          from '../credential/self.json';
+import * as config                              from '../config.json';
 
 const API     = config.id_generator.api.token.url;
 const TIMEOUT = config.id_generator.api.token.timeout;

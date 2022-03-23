@@ -13,7 +13,7 @@ import { Input }                                 from './type/Input';
 import { User               as User_DBType }     from './type/db_doc_user';
 import { UserAuthentication as UserAuth_DBType } from './type/db_doc_userAuthentication';
 import * as nano                                 from 'nano';
-import * as config                               from 'config.json';
+import * as config                               from '../config.json';
 
 const DB_NAME_USER      = config.couchdb.dbPrefix + '_user';
 const DB_NAME_USER_AUTH = config.couchdb.dbPrefix + '_user_authentication';

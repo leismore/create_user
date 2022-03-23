@@ -4,13 +4,13 @@
 
 import { unknown2error }                         from "@leismore/unknown2error";
 import { Request, Response, NextFunction }       from 'express';
-import { is_dup_email }                          from "lib/is_dup_email";
-import { Input }                                 from 'lib/type/Input';
-import { User               as     User_DBType } from 'lib/type/db_doc_user';
-import { UserAuthentication as UserAuth_DBType } from 'lib/type/db_doc_userAuthentication';
+import { is_dup_email }                          from "../is_dup_email";
+import { Input }                                 from '../type/Input';
+import { User               as     User_DBType } from '../type/db_doc_user';
+import { UserAuthentication as UserAuth_DBType } from '../type/db_doc_userAuthentication';
 import * as nano                                 from 'nano';
-import * as config                               from 'config.json';
-import { CUError }                               from "lib/CUError";
+import * as config                               from '../../config.json';
+import { CUError }                               from "../CUError";
 
 const DB_NAME_USER      = config.couchdb.dbPrefix + '_user';
 const DB_NAME_USER_AUTH = config.couchdb.dbPrefix + '_user_authentication';

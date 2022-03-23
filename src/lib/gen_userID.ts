@@ -2,11 +2,11 @@
  * Get new userID (UUID-Random) from id_generator
  */
 
-import { CUError }                              from 'lib/CUError';
+import { CUError }                              from './CUError';
 import { unknown2error }                        from '@leismore/unknown2error';
 import { default as axios, AxiosRequestConfig } from 'axios';
-import * as credential                          from 'credential/self.json';
-import * as config                              from 'config.json';
+import * as credential                          from '../credential/self.json';
+import * as config                              from '../config.json';
 
 const API     = config.id_generator.api['uuid-rand'].url;
 const TIMEOUT = config.id_generator.api['uuid-rand'].timeout;
