@@ -1,6 +1,6 @@
 {
   "name": "@leismore/create_user",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js application for user-account creation.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

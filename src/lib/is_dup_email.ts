@@ -25,6 +25,7 @@ async function is_dup_email(
 ): Promise<boolean>
 {
     let ids:string[] = [];
+    email = email.toLowerCase();
 
     // Get userIDs
     try {
